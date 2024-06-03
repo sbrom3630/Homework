@@ -10,26 +10,26 @@
         div {
             border: 5px solid white;
             margin: 25px 75px;
-
-            img {
-                width: 250px;
-                height: 200px;
-            }
         }
 
-        h3 {
+        .menu-item-pic {
+            width: 250px;
+            height: 200px;
+        }
+
+        div h1 {
             color: sienna;
             font-size: 4em;
             margin: 50px;
         }
 
-        h4 {
+        div h2 {
             color: grey;
             font-size: 3em;
             margin: 30px;
         }
 
-        h5 {
+        div h3 {
             font-size: 2em;
             margin: 20px 0px;
         }
@@ -49,35 +49,48 @@
         <h2>Home to the greatest burgers on earth!</h2>
     </header>
     <div>
-        <h3>Menu</h3>
-        <h4>Burgers</h4>
-        <h5>The Classic $17</h5>
-        <img src="images/classic_burger.jpg" alt="Classic Burger">
-        <p>Classic beef patty, grilled to perfection, with lettuce, tomatoes, pickles, and onions.</p>
-        <h5>The Mexicana $19</h5>
-        <img src="images/mexicana.jpg" alt="The Mexicana">
-        <p>Beef patty with jalapeno salsa, guacamole, and topped with crispy tortilla strips.</p>
-        <h5>The Steakonator $21</h5>
-        <a href="steakonator.html">
-            <img src="images/steakonator.jpg" alt="The Steakonator">
-        </a>
-        <p>
-            Rib-eye steak patty with caramelized onions and topped with crispy facon.
-            <a href="steakonator.html">More info.</a>
-        </p>
+        <h1>Menu</h1>
+        <section>
+            <h2>Burgers</h2>
+            <h3>The Classic $17</h3>
+            <img src="images/classic_burger.jpg" alt="Classic Burger" class="menu-item-pic">
+            <p>Classic beef patty, grilled to perfection, with lettuce, tomatoes, pickles, and onions.</p>
+        </section>
 
-        <h4>Sides</h4>
-        <h5>House Fries $5</h5>
-        <img src="images/fries.jpg" alt="Fries">
-        <p>Crispy Fries.</p>
-        <h5>Loaded Nachos $16</h5>
-        <a href="nachos.html">
-            <img src="images/nachos.jpg" alt="Loaded Nachos">
-        </a>
-        <p>
-            Beef chili, chopped onions, tomatoes, and jalapenos, topped with ranch dressing.
-            <a href="nachos.html">More info.</a>
-        </p>
+        <section>
+            <h5>The Mexicana $19</h5>
+            <img src="images/mexicana.jpg" alt="The Mexicana" class="menu-item-pic">
+            <p>Beef patty with jalapeno salsa, guacamole, and topped with crispy tortilla strips.</p>
+        </section>
+
+        <section>
+            <h5>The Steakonator $21</h5>
+            <a href="steakonator.html">
+                <img src="images/steakonator.jpg" alt="The Steakonator" class="menu-item-pic">
+            </a>
+            <p>
+                Rib-eye steak patty with caramelized onions and topped with crispy facon.
+                <a href="steakonator.html">More info.</a>
+            </p>
+        </section>
+
+        <section>
+            <h4>Sides</h4>
+            <h5>House Fries $5</h5>
+            <img src="images/fries.jpg" alt="Fries" class="menu-item-pic">
+            <p>Crispy Fries.</p>
+        </section>
+
+        <section>
+            <h5>Loaded Nachos $16</h5>
+            <a href="nachos.html">
+                <img src="images/nachos.jpg" alt="Loaded Nachos" class="menu-item-pic">
+            </a>
+            <p>
+                Beef chili, chopped onions, tomatoes, and jalapenos, topped with ranch dressing.
+                <a href="nachos.html">More info.</a>
+            </p>
+        </section>
     </div>
     <footer>
         <a href="https://www.google.com/maps/place/147+E+50th+St,+New+York,+NY+10022/@40.7562502,-73.9713338,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258fcd491d4f1:0x477bcf30b0c679fd!8m2!3d40.7562502!4d-73.9713338!16s%2Fg%2F11csg7lx_q?entry=ttu"
