@@ -1,0 +1,81 @@
+html {
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    overflow: auto;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:focus {
+    color: darkred;
+}
+
+a:active {
+    color: red;
+}
+
+header img {
+    width: 200px;
+}
+
+div {
+    margin-top: 20px;
+}
+
+nav {
+    margin: 15px;
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: gray;
+    border: 7px outset darkgray;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 15px 2px 2px;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+article {
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+#interior-pic {
+    width: 85%;
+}
+
+.name {
+    text-transform: uppercase;
+    text-shadow: 6px 6px 6px grey;
+}

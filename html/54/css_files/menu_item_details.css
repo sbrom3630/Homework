@@ -1,0 +1,14 @@
+.item-pic {
+    float: left;
+    width: 30%;
+    padding-right: 1em;
+}
+
+.about-title {
+    color:  grey;
+}
+
+article {
+    text-align: justify;
+    overflow: auto;
+}
