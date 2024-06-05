@@ -4,10 +4,6 @@
     padding-right: 1em;
 }
 
-.about-title {
-    color:  grey;
-}
-
 article {
     text-align: justify;
     overflow: auto;

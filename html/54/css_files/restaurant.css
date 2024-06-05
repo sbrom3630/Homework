@@ -11,33 +11,52 @@ body {
     overflow: auto;
 }
 
+header img {
+    width: 100px;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 5rem;
+}
+
+header h2 {
+    font-weight: 100;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 a {
-    color: darkblue;
     text-decoration: none;
 }
 
-a:visited {
+p a {
+    color: darkblue;
+}
+
+
+p a:visited {
     color: lightblue;
 }
 
-a:hover {
+p a:hover,
+a:hover,
+.name a:hover {
     color: purple;
 }
 
-a:focus {
+p a:focus,
+a:focus,
+.name a:focus {
     color: darkred;
 }
 
-a:active {
+p a:active,
+a:active,
+.name a:active {
     color: red;
-}
-
-header img {
-    width: 200px;
-}
-
-div {
-    margin-top: 20px;
 }
 
 nav {
@@ -49,33 +68,35 @@ footer {
     background-color: gray;
     border: 7px outset darkgray;
     border-radius: 10px;
-    color: aliceblue;
+    color: black;
     padding: 15px 2px 2px;
-}
-
-h1 {
-    margin: 50px;
-    font-size: 5rem;
-}
-
-p {
-    font-size: 1.5rem;
 }
 
 article {
     letter-spacing: 2px;
     line-height: 35px;
 }
+
 span {
     font-style: italic;
     font-weight: 700;
 }
 
 #interior-pic {
-    width: 85%;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.name {
+.name a {
     text-transform: uppercase;
     text-shadow: 6px 6px 6px grey;
+    color: white;
+    font-size: 6rem;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: -20px;
+    margin-top: -40px;
 }
