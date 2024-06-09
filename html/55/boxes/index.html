@@ -26,6 +26,11 @@
             margin: 10px;
             box-sizing: border-box;
             display: inline-block;
+            /* float: left; */
+        }
+
+        .clear-fix {
+            clear: both;
         }
     </style>
 </head>
@@ -34,7 +39,7 @@
     <div>
         Hi!
     </div><!--
---><div>
+ --><div>
         Hi!
     </div><!--
 
@@ -73,7 +78,7 @@
     <div>
         Hi!
     </div>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <p class="clear-fix">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 </body>
 
 </html>

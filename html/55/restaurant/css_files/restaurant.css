@@ -93,7 +93,7 @@ span {
     margin-top: 20px;
 }
 
-.name a {
+.name a  {
     text-transform: uppercase;
     text-shadow: 6px 6px 6px grey;
     color: white;
