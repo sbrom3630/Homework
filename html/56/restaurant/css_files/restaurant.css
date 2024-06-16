@@ -1,0 +1,106 @@
+html {
+    background-color: black;
+    background-image: url(../images/background.jpg);
+}
+
+body {
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    overflow: auto;
+}
+
+header img {
+    width: 100px;
+}
+
+header img:hover {
+    transform: scale(1.25, 1.25);
+}
+
+h1 {
+    margin: 50px;
+    font-size: 5rem;
+}
+
+header h2 {
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p a {
+    color: darkblue;
+}
+
+p a:visited {
+    color: lightblue;
+}
+
+p a:hover,
+a:hover,
+.name a:hover {
+    color: purple;
+}
+
+p a:focus,
+a:focus,
+.name a:focus {
+    color: darkred;
+}
+
+p a:active,
+a:active,
+.name a:active {
+    color: red;
+}
+
+nav {
+    margin: 15px;
+    font-size: 1.25rem;
+}
+
+footer {
+    background: rgb(46, 45, 56);
+    background: radial-gradient(circle, rgba(46, 45, 56, 1) 0%, rgba(89, 87, 110, 1) 10%, rgba(84, 84, 87, 1) 20%, rgba(126, 134, 154, 1) 30%, rgba(63, 71, 89, 1) 40%, rgba(128, 134, 134, 1) 50%, rgba(115, 123, 126, 1) 60%, rgba(94, 103, 108, 1) 70%, rgb(73, 66, 66) 80%, rgba(98, 98, 98, 1) 90%, rgba(43, 49, 56, 1) 100%);
+    border: 7px outset darkgray;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 2px 2px;
+}
+
+article {
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+.name a {
+    text-transform: uppercase;
+    text-shadow: 6px 6px 6px grey;
+    color: white;
+    font-size: 6rem;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: -20px;
+    margin-top: -40px;
+}
