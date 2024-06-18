@@ -1,0 +1,10 @@
+.item-pic {
+    float: left;
+    width: 30%;
+    padding-right: 1em;
+}
+
+article {
+    text-align: justify;
+    overflow: auto;
+}
