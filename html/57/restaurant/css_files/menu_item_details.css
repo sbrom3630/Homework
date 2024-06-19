@@ -8,3 +8,8 @@ article {
     text-align: justify;
     overflow: auto;
 }
+
+p:first-child::first-line {
+    font-style: italic;
+    font-weight: 700;
+}

@@ -26,7 +26,7 @@
     <style>
         #main {
             border: 5px solid white;
-            margin-left:  75px;
+            margin-left: 75px;
             margin-right: 75px;
             padding-bottom: 1em;
         }
@@ -84,7 +84,8 @@
             margin: 20px 0px;
         }
 
-        h3 a {
+        h3 a,
+        h3 a:visited {
             color: white;
         }
 
@@ -93,7 +94,7 @@
             margin: 2px 0px;
         }
 
-        @media screen and (width >= 800px) {
+        @media screen and (width >=800px) {
             .menu-item {
                 display: inline-block;
                 margin: 1em;
@@ -104,7 +105,7 @@
 
 <body>
     <header id="header">
-        <h1 class="name"><a href="index.html">Burger House</a></h1>
+        <h1 id="name"><a href="index.html">Burger House</a></h1>
         <a href="index.html"><img src="images/logo2.avif" alt="BH logo" class="logo"></a>
         <h2>est. 1954</h2>
         <h2><em>Home to the greatest burgers on earth!</em></h2>
@@ -126,8 +127,6 @@
 
         <section id="steak" class="menu-item">
             <h3><a href="steakonator.html">The Steakonator $21</a></h3>
-            <a href="steakonator.html">
-            </a>
             <p>
                 Rib-eye steak patty with caramelized onions and topped with crispy facon.
                 <a href="steakonator.html">More info.</a>
@@ -142,8 +141,6 @@
 
         <section id="nachos" class="menu-item">
             <h3><a href="nachos.html">Loaded Nachos $16</a></h3>
-            <a href="nachos.html">
-            </a>
             <p>
                 Beef chili, chopped onions, tomatoes, and jalapenos, topped with ranch dressing.
                 <a href="nachos.html">More info.</a>
