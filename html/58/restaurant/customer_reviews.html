@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css_files/restaurant.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        ul {
+            list-style-type: circle;
+        }
+
+        li {
+            padding: 1em;
+            margin: 1em;
+            font-size: 1.25rem;
+            letter-spacing: 3px;
+            line-height: 30px;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: justify;
+        }
+
+        .cust-name {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        #shaul-vid {
+            display: block;
+            width: 80%;
+            margin: auto;
+            padding-top: 1em;
+            border-radius: 2em;
+        }
+
+        #pic {
+            margin-bottom: 1em;
+            width: 35%;
+        }
+
+        label {
+            display: inline-block;
+            padding: .5em;
+        }
+
+        textarea {
+            width: 75%;
+            height: 9em;
+        }
+
+        button {
+            margin-top: 1em;
+            border-radius: 1em;
+        }
+
+        @media print {
+            #shaul-vid {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="name"><a href="index.html">Burger House</a></h1>
+        <a href="index.html"><img src="images/logo2.avif" alt="BH logo" class="logo"></a>
+        <h2>est. 1954</h2>
+        <h2><em>Home to the greatest burgers on earth!</em></h2>
+    </header>
+
+    <div id="main">
+        <h1 id="title">What our customers are saying</h1>
+        <ul>
+            <li>
+                <span class="cust-name">Shaul B.</span>
+                <video id="shaul-vid" controls poster="images/_poster.png" src="videos/burger_review.mp4"></video>
+            </li>
+            <li>
+                <span class="cust-name">Josh D.</span>
+                "Burger House has been my family's favorite spot for generations. The classic burger tastes just like I
+                remember from my childhood, and the new menu items are always a hit. We love the cozy atmosphere and
+                friendly staff. Five stars!"
+            </li>
+            <li>
+                <span class="cust-name">Sarah L.</span> "I can't get enough of the Mexicana! The flavors are incredible,
+                and
+                the heat is just right. Pair it with their hand-cut fries and a milkshake, and you have the perfect
+                meal.
+                Burger House never disappoints!"
+            </li>
+            <li>
+                <span class="cust-name">Michoel S.</span> "As a food critic, I've tried burgers from coast to coast, but
+                nothing beats the <a href="steakonator.html">Steakonator</a> at Burger House. The quality of the
+                ingredients and the care they put into each burger is unmatched. Highly recommend!"
+            </li>
+            <li>
+                <span class="cust-name">Elisheva S.</span> "We held my son's birthday party at Burger House, and it was
+                a huge success! The kids loved the fun menu options, and the adults appreciated the delicious gourmet
+                burgers. The staff went above and beyond to make our day special."
+            </li>
+            <li>
+                <span class="cust-name">David M.</span> "I've been coming to Burger House since the 70s, and it's always
+                been a place where I feel at home. The retro decor and vintage photos bring back so many memories. Plus,
+                the <a href="nachos.html">Loaded Nachos</a> are still the best Nachos in town!"
+            </li>
+        </ul>
+        <img id="pic" src="images/man_eating_burger.jpg" alt="enjoying a burger">
+
+        <form method="post" action="theNonExistantServer">
+            <h1>Submit a review</h1>
+            <label>
+                * First Name: <input name="first" required>
+            </label>
+
+            <label>
+                * Last Name: <input name="last" required>
+            </label>
+
+            <label>
+                * Address: <input name="address" required>
+            </label>
+
+            <label>
+                * City: <input name="city" required>
+            </label>
+
+            <label>
+                * State:
+                <select name="state" required>
+                    <option>CT</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NY</option>
+                    <option>RI</option>
+                    <option>YOU GET THE POINT</option>
+                </select>
+            </label>
+
+            <label>
+                * Phone Number: <input type="tel" name="phone" required>
+            </label>
+
+            <label>
+                * Email: <input type="email" name="email" placeholder="example@gmail.com" required>
+            </label>
+
+            <label>
+                * Age: <input type="number" name="age" min="18" max="120" required>
+            </label>
+
+            <label>
+                When did you last visit Burger House?
+                <input type="date" min="1953-01-01">
+            </label>
+
+            <label>
+                Which menu item(s) did you order?
+                <label>
+                    The Classic<input type="checkbox" name="menu-item" value="classic">
+                </label>
+
+                <label>
+                    The Mexicana<input type="checkbox" name="menu-item" value="mexicana">
+                </label>
+
+                <label>
+                    The Steakonator<input type="checkbox" name="menu-item" value="steakonator">
+                </label>
+
+                <label>
+                    House Fries<input type="checkbox" name="menu-item" value="fries">
+                </label>
+
+                <label>
+                    Loaded Nachos<input type="checkbox" name="menu-item" value="nachos">
+                </label>
+            </label>
+
+            <label>
+                On a scale of 1 to 10 how would you rate your overall experience at Burger House?
+                <input type="range" name="rating" min="1" max="10">
+            </label>
+
+            <label>
+                How likely would you be to recommend Burger House to a friend?
+                <label>
+                    <input type="radio" name="recommend" value="5">Very Likely
+                </label>
+
+                <label>
+                    <input type="radio" name="recommend" value="4">Likely
+                </label>
+
+                <label>
+                    <input type="radio" name="recommend" value="3">Neutral
+                </label>
+
+                <label>
+                    <input type="radio" name="recommend" value="2">Unlikely
+                </label>
+
+                <label>
+                    <input type="radio" name="recommend" value="1">Very Unlikely
+                </label>
+            </label>
+
+            <textarea name="comments" placeholder="Leave a comment up to 1000 characters" maxlength="1000"></textarea>
+
+            <div>
+                <button type="submit">Submit your review</button>
+                <button type="reset">Reset Fields</button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <a href="https://www.google.com/maps/place/147+E+50th+St,+New+York,+NY+10022/@40.7562502,-73.9713338,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258fcd491d4f1:0x477bcf30b0c679fd!8m2!3d40.7562502!4d-73.9713338!16s%2Fg%2F11csg7lx_q?entry=ttu"
+            target="_blank">147 E 50th St, New York, NY 10022</a> |
+        Phone Number: (987)654-3210 | Email: burgerhouse@gmail.com
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="about.html">About Us</a> |
+            <a href="customer_reviews.html">Testimonials</a> |
+            <a href="#header">Back To Top</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.item-pic {
+    float: left;
+    width: 30%;
+    padding-right: 1em;
+}
+
+article {
+    text-align: justify;
+    overflow: auto;
+}
+
+p:first-child::first-line {
+    font-style: italic;
+    font-weight: 700;
+}
