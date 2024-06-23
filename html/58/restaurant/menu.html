@@ -89,7 +89,7 @@
             color: white;
         }
 
-        div > p {
+        div>p {
             margin: 1em;
         }
 
@@ -109,6 +109,14 @@
             border: 1px solid black;
         }
 
+        td:first-child {
+            text-align: left;
+        }
+
+        td {
+            text-align: right;
+        }
+
         caption {
             text-transform: uppercase;
             font-size: 1.5rem;
@@ -125,11 +133,13 @@
             color: black;
         }
 
-        td:last-child, th:last-child {
+        td:last-child,
+        th:last-child {
             font-family: cursive;
         }
 
-        thead, tfoot {
+        thead,
+        tfoot {
             background-color: black;
             font-weight: 700;
         }
@@ -191,7 +201,7 @@
         </div>
         <table id="nutrition-facts">
             <caption>nutrition facts</caption>
-            <thead>                
+            <thead>
                 <tr>
                     <th>Item</th>
                     <th>Calories</th>
