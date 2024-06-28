@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Layout</title>
+
+    <style>
+        body {
+            display: grid;
+            grid-template: 225px 40px 40px 225px / 225px 40px 40px 225px;
+        }
+
+        div:nth-child(1) {
+            background-color: red;
+            grid-area: 1 / 2 / 2 / 4;
+        }
+
+        div:nth-child(2) {
+            background-color: purple;
+            grid-area: 2 / 3 / 4 / 5;
+        }
+
+        div:nth-child(3) {
+            background-color: darkred;
+            grid-area: 3 / 2 / 5 / 4;
+        }
+
+        div:nth-child(4) {
+            background-color: darkgreen;
+            grid-area: 2 / 1 / 4 / 3;
+        }
+
+        div:nth-child(5) {
+            background-color: red;
+            grid-area: 2 / 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
