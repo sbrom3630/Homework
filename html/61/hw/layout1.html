@@ -10,10 +10,10 @@
         body {
             display: grid;
             grid-template-areas:
-                '.   rd     rd      .'
-                'grn red2   prple2   prple'
-                'grn grn2   drkred2  prple'
-                '.  drkred drkred   .';
+                '.   rd      rd     .'
+                'grn red2    prple  prple'
+                'grn rd_grn  prple  prple'
+                '.   drkred  drkred .';
             grid-template-rows: 225px 40px 40px 225px;
 
             grid-template-columns: 225px 40px 40px 225px;
@@ -27,17 +27,19 @@
 
         div:nth-child(2) {
             background-color: purple;
-            grid-area: prple / prple2 / prple / prple;
+            grid-area: prple;
         }
 
         div:nth-child(3) {
             background-color: darkred;
-            grid-area: drkred2 / drkred / drkred / drkred;
+            grid-area: drkred;
+            grid-row-start: rd_grn;
         }
 
         div:nth-child(4) {
             background-color: darkgreen;
-            grid-area: grn / grn / grn / grn2;
+            grid-area: grn;
+            grid-column-end: rd_grn;
         }
 
         div:nth-child(5) {
