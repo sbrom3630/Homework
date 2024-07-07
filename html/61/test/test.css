@@ -86,10 +86,6 @@ form {
     align-items: center;
 }
 
-form h2 {
-    margin: 0 0 5px;
-}
-
 input {
     box-shadow: 4px 4px black;
 }
