@@ -1,0 +1,3 @@
+Didin't put "name" attribute on inputs.
+Product flex sections are slightly different sizes.
+Didn't relize that years on table are supposed to be right justified.
