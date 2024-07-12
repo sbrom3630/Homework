@@ -70,11 +70,11 @@ a:hover {
     text-align: center;
 }*/
 
-.product img,
+/* .product img,
 .product video {
     width: 100%;
-    /* margin: auto; */
-}
+    /* margin: auto;
+} */
 
 figcaption {
     text-align: justify;
@@ -99,17 +99,17 @@ button {
     border-radius: 5px;
 } */
 
-table {
+/* table {
     width: 80%;
     margin: auto;
     border-collapse: collapse;
-}
+} */
 
-.table-container {
+/* .table-container {
     overflow: auto;
-}
+} */
 
-tbody td,
+/* tbody td,
 th,
 tfoot,
 tfoot td:last-child {
@@ -135,7 +135,7 @@ tbody tr:nth-child(even) {
 
 table tr:hover {
     background-color: blue;
-}
+} */
 
 @media (width >=768px) {
     figure:nth-child(2) {
