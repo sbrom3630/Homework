@@ -5,16 +5,16 @@ console.log(convertToCelsius(32));
 console.log(convertToFarenheit(0));
 
 const temp = +prompt('Enter a temperature to convert');
-let unit = prompt('Press C to convert from Farenheit to Celsius\nPress F to convert from Celsius to Farenheit').toUpperCase();
-while (unit === null || (unit !== 'F' && unit !== 'C')) {
-    unit = prompt('Invalid entry.\nPress C to convert from Farenheit to Celsius\nPress F to convert from Celsius to Farenheit').toUpperCase();
+let unit = prompt('Press C to convert from Farenheit to Celsius\nPress F to convert from Celsius to Farenheit');
+while (unit === null || (unit.toUpperCase() !== 'F' && unit.toUpperCase() !== 'C')) {
+    unit = prompt('Invalid entry.\nPress C to convert from Farenheit to Celsius\nPress F to convert from Celsius to Farenheit');
 }
-alert(`Converted Temperature: ${convertTemp(unit, temp)}°${unit}`);
+alert(`Converted Temperature: ${convertTemp(unit, temp)}°${unit.toUpperCase()}`);
 
 function convertTemp(unit, temp) {
-    if (unit === 'F') {
+    if (unit.toUpperCase() === 'F') {
         return convertToFarenheit(temp);
-    } else if (unit === 'C') {
+    } else if (unit.toUpperCase() === 'C') {
         return convertToCelsius(temp);
     }
 }
