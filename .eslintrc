@@ -1,9 +1,19 @@
 {
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
+  "extends": "eslint:recommended",
   "rules": {
-    "semi": "error"
-    /*"no-plusplus": "error"*/
+    "semi": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-var": "error",
+    "eqeqeq": "error"
+  },
+  "env": {
+    "browser": true,
+    "es6": true
   }
 }
