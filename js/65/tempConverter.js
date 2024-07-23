@@ -1,4 +1,6 @@
 'use strict';
+let convertToCelsius = (temp) => (temp - 32) * 5 / 9;
+const convertToFarenheit = (temp) => temp / 5 * 9 + 32;
 console.log(convertToCelsius(25));
 console.log(convertToFarenheit(25));
 console.log(convertToCelsius(32));
@@ -19,10 +21,10 @@ function convertTemp(unit, temp) {
     }
 }
 
-function convertToFarenheit(temperature) {
-    return temperature / 5 * 9 + 32;
-}
+// function convertToFarenheit(temperature) {
+//     return temperature / 5 * 9 + 32;
+// }
 
-function convertToCelsius(temperature) {
-    return (temperature - 32) * 5 / 9;
-}
+// function convertToCelsius(temperature) {
+//     return (temperature - 32) * 5 / 9;
+// }
