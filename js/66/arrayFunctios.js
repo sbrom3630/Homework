@@ -15,8 +15,8 @@ console.log(chars.some(letter => letter === letter.toLowerCase()));
 
 onlyIf(chars, letter => letter === 'c' || letter === 'e', (value, index) => console.log(`Slot number ${index} contains the letter ${value}`));
 
-const c_eChars = chars.filter(letter => letter === 'c' || letter === 'e');
-c_eChars.forEach((value, index) => console.log(`Slot number ${index} contains the letter ${value}`));
+const filteredChars = chars.filter(letter => letter === 'c' || letter === 'e');
+filteredChars.forEach((value, index) => console.log(`Slot number ${index} contains the letter ${value}`));
 
 function myEvery(arr, callbackFunc) {
     for (let i = 0; i < arr.length; i++) {
