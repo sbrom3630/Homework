@@ -18,6 +18,8 @@ onlyIf(chars, letter => letter === 'c' || letter === 'e', (value, index) => cons
 const filteredChars = chars.filter(letter => letter === 'c' || letter === 'e');
 filteredChars.forEach((value, index) => console.log(`Slot number ${index} contains the letter ${value}`));
 
+// onlyIf2(chars, letter => letter === 'c' || letter === 'e', (value, index) => console.log(`Slot number ${index} contains the letter ${value}`));
+
 function myEvery(arr, callbackFunc) {
     for (let i = 0; i < arr.length; i++) {
         if (!callbackFunc(arr[i])) {
@@ -43,3 +45,8 @@ function onlyIf(arr, testCallback, action) {
         }
     }
 }
+
+// function onlyIf2(arr, testCallback, action) {
+//     const filteredArray = arr.filter(testCallback);
+//     filteredArray.forEach(action);
+// }
