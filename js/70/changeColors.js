@@ -7,12 +7,13 @@
         return `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`;
     }
 
+    let body = document.querySelector('body');
     let interval;
     document.querySelector('button').addEventListener('click', function () {
         if (!interval) {
             interval = setInterval(() => {
-                document.querySelector('body').style.backgroundColor = getRandomRgb();
-                document.querySelector('body').style.color = getRandomRgb();
+                body.style.backgroundColor = getRandomRgb();
+                body.style.color = getRandomRgb();
             }, 1000);
             this.innerText = 'Stop';
         } else {
