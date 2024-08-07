@@ -1,10 +1,10 @@
 (function () {
     'use strict';
-    function getRandomNumber() {
+    function getRandomNumUnder256() {
         Math.floor(Math.random() * 256);
     }
     function getRandomRgb() {
-        `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`;
+        `rgb(${getRandomNumUnder256()}, ${getRandomNumUnder256()}, ${getRandomNumUnder256()})`;
     }
 
     let interval;
